@@ -19,8 +19,8 @@ setup(
     author_email='t@a4.io',
     license='MIT',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-    entry_points = {
+    entry_points={
         'console_scripts': ['wesh=wesh.cli:main'],
     },
-    install_requires=['zeroconf'],
+    install_requires=['zeroconf', 'psutil', 'Flask', 'pyyaml'],
 )
